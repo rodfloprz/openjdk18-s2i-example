@@ -1,7 +1,7 @@
 # openjdk18-s2i-example
  A simple SpringBoot application that is deployed into OpenShift using fabric8 maven plugin.
 
- ##Setup
+ ## Setup
  * Go to springboot-hello-world dir: `cd springboot-hello-world`
  * Login to your OpenShift instance: `oc login "YOUR_OS_INSTANCE"`
  * Create your project: `oc new-project "YOUR_PROJECT_NAME""`
