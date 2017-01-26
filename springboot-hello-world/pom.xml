@@ -15,6 +15,9 @@
 
         <!-- Spring Boot -->
         <spring-boot.version>1.4.1.RELEASE</spring-boot.version>
+
+        <fabric8.deploy.createExternalUrls>true</fabric8.deploy.createExternalUrls>
+        <fabric8.generator.fromMode>docker</fabric8.generator.fromMode>
     </properties>
 
     <dependencies>
@@ -35,6 +38,19 @@
                     <execution>
                         <goals>
                             <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>fabric8-maven-plugin</artifactId>
+                <version>3.1.92</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resource</goal>
+                            <goal>build</goal>
                         </goals>
                     </execution>
                 </executions>
