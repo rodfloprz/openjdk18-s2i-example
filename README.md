@@ -17,7 +17,7 @@ Log in to your OpenShift instance and create your project:
 
 The following command creates the OpenShift application with all resources:
 
-`oc new-app https://github.com/RadekKoubsky/openjdk18-s2i-example.git --context-dir=springboot-hello-world brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/redhat-openjdk-18/openjdk18-openshift:1.0-1 --allow-missing-images --insecure-registry=true`
+`oc new-app https://github.com/RadekKoubsky/openjdk18-s2i-example.git --context-dir=springboot-hello-world registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift:latest --allow-missing-images --insecure-registry=true`
 
 To access the application, we need to expose its service via route:
 
