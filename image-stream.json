@@ -8,13 +8,13 @@
     }
   },
   "spec": {
-    "dockerImageRepository": "brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/redhat-openjdk-18/openjdk18-openshift",
+    "dockerImageRepository": "registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift",
     "tags": [
       {
         "name": "1.0-1",
         "from": {
           "kind": "DockerImage",
-          "name": "brew-pulp-docker01.web.prod.ext.phx2.redhat.com:8888/redhat-openjdk-18/openjdk18-openshift:1.0-1"
+          "name": "registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift:1.0-2"
         },
         "importPolicy": {
           "insecure": true
