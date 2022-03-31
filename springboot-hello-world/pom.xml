@@ -14,7 +14,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
 
         <!-- Spring Boot -->
-        <spring-boot.version>1.4.1.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
 
         <fabric8.deploy.createExternalUrls>true</fabric8.deploy.createExternalUrls>
         <fabric8.generator.fromMode>docker</fabric8.generator.fromMode>
